@@ -1,0 +1,80 @@
+.RightSide {
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.navIcons {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  position: fixed;
+  width: 300px;
+  align-items: center;
+  background-color: #aaa;
+  border-radius: 20px;
+  padding: 5px;
+  /* position: absolute; */
+}
+.navIcons > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.navIcons>div{
+  display: flex;
+  align-items: center;
+}
+.homeimage {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.notify {
+  display: flex;
+  cursor: pointer;
+}
+
+.notification-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(13, 10, 194, 0.897);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+.notifyImagess {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25%;
+}
+.notificationdetails {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  margin-left: 5px;
+}
+.content {
+  margin-left: 10px;
+}
+
+.vl {
+  height: 150%;
+  /* border-left: 2px solid var(--hrColor); */
+  background-color: black;
+}
+.Notification > hr {
+  width: 85%;
+  border: 1px solid var(--hrColor);
+}
+.clear {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}

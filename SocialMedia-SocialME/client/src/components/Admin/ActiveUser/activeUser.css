@@ -1,0 +1,40 @@
+
+ 
+.userProfile {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25%;
+}
+.allLoginUsers {
+  width: 100%;
+}
+.sixze {
+  display: flex;
+  flex-direction: column;
+}
+.Block {
+  background-color: red !important;
+  color: white;
+  border: none;
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.button {
+  height: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 100px;
+}
+.userSearch{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(224, 228, 232);
+  outline: none;
+}
+
