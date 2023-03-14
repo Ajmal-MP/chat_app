@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages{
+        stage ('Git code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Ajmal-MP/chat_app.git'
+            }
+        }
+        stage ("sonar qube analysis") {
+            steps {
+                script {
+                    scannerHome = tool 'SonarQube'
+                }
+
+                withSonarQubeEnv('SonarQube') {
+                    sh """
+                        ${scannerHome}/bin/sonar-scanner  \
+                            -Dsonar.organization=my-orgnization \
+                            -Dsonar.projectKey=my-orgnization_chat-app \
+                            -Dsonar.sources=. \
+                            -Dsonar.host.url=https://sonarcloud.io
+                       """
+                }
+            }
+        }
+    }
+}
